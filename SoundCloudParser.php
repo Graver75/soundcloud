@@ -3,7 +3,7 @@
 require('Helper.php');
 
 
-class SCWebDriver {
+class SoundCloudParser {
     public $baseHost;
     public $apiHost;
 

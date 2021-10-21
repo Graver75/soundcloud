@@ -1,6 +1,6 @@
 <?php
 
-require('SCWebDriver.php');
+require('SoundCloudParser.php');
 require('SCDBDriver.php');
 
 require('models/Artist.php');
@@ -8,8 +8,8 @@ require('models/Track.php');
 
 $config = include('config.php'); // в конфиг прокинуть db юзера надо и юзернеймы исполнителей
 
-$webdriver = new SCWebDriver($config);
-$dbDriver  = new SCDBDriver($config); // тут в файле лежит команда для создания базы
+$webdriver = new SoundCloudParser($config);
+$dbDriver  = new SCDBDriver($config);
 
 $artists   = $config['artists'];
 
